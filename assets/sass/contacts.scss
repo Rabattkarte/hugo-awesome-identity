@@ -10,17 +10,17 @@
     line-height: 2.2em;
     margin-left: 0.1em;
     margin-right: 0.1em;
-    background: #f9f9fbff;
+    background: $color-light-grey;
     border-radius: 100%;
-    color: #535358ff;
+    color: $color-neutral-grey;
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
   .contact:hover {
-    background: #b6262cff;
-    color: #ffffffff;
-    box-shadow: 0 0 1px 7px #b6262c26;
+    background: $color-accent;
+    color: $color-white;
+    box-shadow: 0 0 1px 7px fade-out($color-accent, 0.85);
   }
 }

@@ -12,7 +12,7 @@
     line-height: 2em;
     text-transform: uppercase;
     font-weight: 700;
-    color: #000000ff;
+    color: $color-black;
 
     &:after {
       content: "";
@@ -26,7 +26,7 @@
       height: 2px;
       left: 50%;
       bottom: -0.3em;
-      background: lighten(#b6262bff, 10%);
+      background: $color-accent;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
     }
@@ -35,6 +35,6 @@
     }
   }
   .action:hover {
-    color: lighten(#000000ff, 40%);
+    color: lighten($color-black, 40%);
   }
 }

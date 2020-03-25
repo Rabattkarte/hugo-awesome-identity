@@ -27,7 +27,7 @@ body {
 }
 
 a {
-  color: #b6262cff;
+  color: $color-accent;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
@@ -40,11 +40,11 @@ a {
 }
 
 ::selection {
-  background-color: #b6262cff;
-  color: #ffffffff;
+  background-color: $color-accent;
+  color: $color-white;
 }
 
 ::-moz-selection {
-  background-color: #b6262cff;
-  color: #ffffffff;
+  background-color: $color-accent;
+  color: $color-white;
 }
