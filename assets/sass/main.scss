@@ -1,4 +1,16 @@
-@import "colors";
+{{ $style := resources.Get "sass/main.scss" |
+  resources.ExecuteAsTemplate "style.main.scss" . |
+  toCSS |
+  minify |
+  fingerprint }}
+
+$color-accent: {{ .Site.Params.color.accent | default "#b22222" }}
+$color-white: #ffffff;
+$color-black: #000000;
+$color-neutral-grey: #444444;
+$color-light-grey: #f7f7f7;
+
+// @import "colors";
 @import "global";
 @import "footer";
 
